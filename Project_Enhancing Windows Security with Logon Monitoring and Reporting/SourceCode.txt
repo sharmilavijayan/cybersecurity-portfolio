@@ -1,0 +1,26 @@
+gpupdate /force
+
+
+#Scriptname: login_info.ps1
+
+$searchedName = Read-Host -Prompt "Enter the name you want to search for"
+Get-EventLog -LogName Security -After (Get-Date).AddMinutes(-200)
+Where-Object { $_.EventID -eq 4624 -and $_.ReplacementStrings[5] -match$searchedName }
+
+
+# ScriptName: Report_Generator.ps1
+
+
+For (;;)
+{
+    # Get Security events safely and convert to HTML
+    Get-WinEvent -LogName Security | ConvertTo-Html | Out-File "C:\inetpub\wwwroot\security_report.html"
+    
+    # Wait 15 minutes
+    Start-Sleep -Seconds 900
+}
+
+
+
+
+
